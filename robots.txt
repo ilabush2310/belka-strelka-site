@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ilabush2310.github.io/belka-strelka-site/sitemap.xml
