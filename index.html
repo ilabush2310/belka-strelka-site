@@ -174,6 +174,7 @@
     white-space:nowrap;
   }
   .nav-cta:hover{background:var(--rose-deep); transform:translateY(-1px);}
+  .nav-book-mobile{display:none;}
   .burger{display:none; width:26px; height:20px; position:relative; cursor:pointer; border:none; background:none;}
   .burger span{position:absolute; left:0; right:0; height:2px; background:var(--ink); border-radius:2px; transition:.3s;}
   .burger span:nth-child(1){top:0;} .burger span:nth-child(2){top:9px;} .burger span:nth-child(3){top:18px;}
@@ -557,6 +558,16 @@
     .price-row{flex-direction:column; align-items:flex-start; gap:6px;}
     .pr-price{text-align:left;}
     .gallery-grid{grid-template-columns:1fr 1fr; gap:10px;}
+    .nav-cta{display:none;}
+    .nav-inner{padding:16px 20px;}
+    .brand{font-size:18px;}
+    .brand svg{width:30px; height:30px;}
+    .burger{margin-left:auto;}
+    .nav-book-mobile{
+      display:block !important; background:var(--ink); color:var(--cream) !important;
+      text-align:center; border-radius:12px; margin-top:6px; font-weight:700;
+      opacity:1 !important;
+    }
   }
   /* ---------- CALCULATOR ---------- */
   .calc{padding:100px 0; background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
@@ -623,6 +634,7 @@
       <a href="#gallery">Работы</a>
       <a href="#reviews">Отзывы</a>
       <a href="#contact">Контакты</a>
+      <a href="https://dikidi.ru/1764988" target="_blank" class="nav-book-mobile">Записаться онлайн →</a>
     </div>
     <a href="https://t.me/margarita_alexan" target="_blank" class="nav-cta">Записаться</a>
     <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
