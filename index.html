@@ -278,6 +278,7 @@
   /* ---------- ABOUT ---------- */
   .about{padding:130px 0 100px;}
   .about-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:72px; align-items:start;}
+  .about-portraits{display:flex; flex-direction:column; gap:20px;}
   .about-portrait{
     background:linear-gradient(160deg, var(--gold-pale), var(--cream-deep));
     border-radius:var(--r-card); aspect-ratio:3/4; position:relative; overflow:hidden;
@@ -688,11 +689,19 @@
 <!-- ============ ABOUT ============ -->
 <section class="about" id="about">
   <div class="wrap about-grid">
-    <div class="about-portrait reveal">
-      <img src="img/margo.jpg" alt="Маргарита — основатель студии Белка-Стрелка" class="about-photo">
-      <span class="quote-mark">"</span>
-      <span class="quote-text">Забочусь не только о вашей красоте, но и о вашей спинке.</span>
-      <span class="quote-author">Маргарита, основатель студии</span>
+    <div class="about-portraits reveal">
+      <div class="about-portrait">
+        <img src="img/margo.jpg" alt="Маргарита — основатель студии Белка-Стрелка" class="about-photo">
+        <span class="quote-mark">"</span>
+        <span class="quote-text">Забочусь не только о вашей красоте, но и о вашей спинке.</span>
+        <span class="quote-author">Маргарита, основатель студии</span>
+      </div>
+      <div class="about-portrait">
+        <img src="img/angelika.jpg" alt="Анжелика — мастер студии Белка-Стрелка" class="about-photo">
+        <span class="quote-mark">"</span>
+        <span class="quote-text">Делаю так, чтобы было красиво, естественно и по-доброму.</span>
+        <span class="quote-author">Анжелика, мастер студии</span>
+      </div>
     </div>
     <div class="about-text reveal">
       <span class="eyebrow" style="display:block; margin-bottom:18px;">О студии</span>
