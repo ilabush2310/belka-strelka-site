@@ -212,7 +212,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
 @media(min-width:900px){.about{grid-template-columns:1fr 1fr;align-items:start}}
 .about-txt p{font-size:clamp(15px,1.3vw,17.5px);max-width:56ch}
 .about-media{position:relative}
-.about-media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.about-media img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
 .tag{position:absolute;left:-8px;bottom:22px;background:var(--velvet);color:#fff;
   padding:13px 20px;font-family:var(--f-display);font-weight:600;font-size:13px;
   line-height:1.3;max-width:220px;border-radius:var(--r)}
@@ -222,7 +222,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
 @media(min-width:820px){.masters{grid-template-columns:1fr 1fr}}
 .master{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
   display:flex;flex-direction:column}
-.master img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.master img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
 .master-b{padding:24px 22px 26px;flex:1;display:flex;flex-direction:column}
 .master-role{color:var(--fur-text);font-size:14px;font-weight:600;line-height:1.4;margin:8px 0 14px}
 .master p{font-size:14.5px;opacity:.78;flex:1}
@@ -336,7 +336,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
 .edu li{padding-left:26px;position:relative;font-size:15px}
 .edu li::before{content:"";position:absolute;left:0;top:9px;width:12px;height:2px;background:var(--mauve)}
 .edu .btn-ink{margin-top:28px}
-.edu img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.edu img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
 
 /* ============ FAQ ============ */
 .faq{max-width:800px}
