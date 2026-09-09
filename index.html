@@ -427,6 +427,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
 @media(min-width:820px){.fab{left:22px;bottom:22px;width:104px}}
 @media(prefers-reduced-motion:reduce){.fab{transition:none}}
 
+
+/* блок-приглашение в подбор */
+.quizcta{background:var(--card);border:2px solid var(--accent);border-radius:var(--r);
+  padding:clamp(24px,4vw,40px);display:grid;gap:20px;align-items:center}
+@media(min-width:820px){.quizcta{grid-template-columns:1.2fr .8fr}}
+.quizcta h2{margin:0 0 10px;font-size:clamp(24px,3.4vw,40px)}
+.quizcta>div:first-child{min-width:0}
+.quizcta p{margin:0 0 18px;color:var(--ink-soft)}
+.quizcta .btn{width:100%}
+@media(min-width:520px){.quizcta .btn{width:auto}}
+.quizcta-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.quizcta-strip img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r)}
+.quizcta-strip{align-items:start}
+
 /* ---- мобильные доводки ---- */
 @media(max-width:819px){
   /* тач-цели не меньше 44px */
@@ -481,6 +495,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
       <a href="#masters">Мастера</a>
       <a href="#prices">Цены</a>
       <a href="#calc">Расчёт</a>
+      <a href="quiz.html">Подбор</a>
       <a href="#edu">Обучение</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -500,7 +515,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
         Полтора часа тишины — а дальше можно не красить ресницы вообще.</p>
       <div class="hero-cta">
         <a class="btn btn-fill" href="https://dikidi.ru/1764988" target="_blank" rel="noopener">Записаться онлайн</a>
-        <a class="btn btn-line" href="#calc">Рассчитать стоимость</a>
+        <a class="btn btn-line" href="quiz.html">Подобрать ресницы</a>
       </div>
     </div>
 
@@ -592,7 +607,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
           и густоту собственных ресниц, а не по картинке из каталога.</p>
       </div>
       <div class="about-media">
-        <img src="https://belka-strelka-nhk.ru/img/studio.jpg" alt="Рабочее место в студии Белка-Стрелка в Находке" loading="lazy" width="800" height="1000">
+        <img src="img/quiz/studio-couch.webp" alt="Кушетка в пыльно-розовом бархате в студии Белка-Стрелка, Находка" loading="lazy" width="800" height="1057">
         <div class="tag">Новая кушетка в пыльно-розовом бархате — чтобы спине было мягко</div>
       </div>
     </div>
@@ -635,6 +650,27 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
 </section>
 
 <!-- ============ ПРАЙС ============ -->
+
+<!-- Приглашение в подбор: стоит перед прайсом, потому что именно здесь
+     человек упирается в вопрос «а что мне вообще выбрать» -->
+<section class="sec" id="podbor">
+  <div class="wrap">
+    <div class="quizcta">
+      <div>
+        <h2>Не знаете, что выбрать?</h2>
+        <p>Шесть вопросов о том, какой результат вам хочется — без профессиональных
+          терминов. Покажем подходящие эффекты и примеры работ. Около минуты.</p>
+        <a class="btn btn-fill" href="quiz.html">Подобрать ресницы</a>
+      </div>
+      <div class="quizcta-strip" aria-hidden="true">
+        <img src="img/quiz/classic.webp" alt="" loading="lazy" width="640" height="640">
+        <img src="img/quiz/3d.webp" alt="" loading="lazy" width="640" height="640">
+        <img src="img/quiz/wet.webp" alt="" loading="lazy" width="640" height="640">
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec light" id="prices">
   <div class="wrap">
     <svg class="rule" viewBox="0 0 56 22" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"><path d="M4 20c1-7 3-12 6-16"/><path d="M20 21c0-8 1-14 3-19"/><path d="M36 21c-1-8-1-14 1-19"/><path d="M52 20c-2-7-4-12-7-16"/></g></svg>
